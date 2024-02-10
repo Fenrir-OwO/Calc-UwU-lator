@@ -8,6 +8,7 @@ body{
     background-size: cover;
     background-position: center;
     font-family: 'Pacifico';
+    flex-direction: column;
 }
 
 #calculator{
@@ -80,3 +81,13 @@ button:active{
     background-image: radial-gradient(circle, #f2d9eb, #eccae1, #e7bad7, #e2abcd, #dd9bc2, #de97c2, #df94c2, #e090c2, #e797ce, #ed9fda, #f3a7e6, #f9aff3);
 }
 
+.heading{
+    font-family: "Honk", system-ui;
+    font-optical-sizing:auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 25,
+    "SHLN" 0;
+    font-size: 180px;
+}
