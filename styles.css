@@ -7,6 +7,7 @@ body{
     background-image: url(page-background.png);
     background-size: cover;
     background-position: center;
+    font-family: 'Pacifico';
 }
 
 #calculator{
@@ -19,12 +20,20 @@ body{
 
 #display{
     width: 100%;
-    padding: 20px;
-    font-size: 5rem;
+    padding: 30px;
+    font-size: 3rem;
     text-align: left;
     border: none;
-    /* background-image: linear-gradient(to left, #f4b8e4, #f2b0e5, #f0a8e7, #eca0ea, #e898ed, #e993eb, #e98dea, #ea88e8, #f083e0, #f67fd7, #fb7acd, #ff76c4); */
-    color: red;
+    min-height: 150px;
+    background-image: linear-gradient(to left, #f4b8e4, #f2b0e5, #f0a8e7, #eca0ea, #e898ed, #e993eb, #e98dea, #ea88e8, #f083e0, #f67fd7, #fb7acd, #ff76c4);
+    color: rgb(148, 0, 62);
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
 }
 
 #keys{
@@ -45,6 +54,10 @@ button{
     font-weight: bold;
     /* font-style: italic; */
     cursor: pointer;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 button:hover{
@@ -66,3 +79,4 @@ button:active{
 .operatorBttn:active{
     background-image: radial-gradient(circle, #f2d9eb, #eccae1, #e7bad7, #e2abcd, #dd9bc2, #de97c2, #df94c2, #e090c2, #e797ce, #ed9fda, #f3a7e6, #f9aff3);
 }
+
