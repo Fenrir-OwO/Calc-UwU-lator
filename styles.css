@@ -1,29 +1,68 @@
-body {
-    background-color:palevioletred;
-}
-.header{
+body{
+    margin: 0;
     display: flex;
     justify-content: center;
-    font-size:xx-large;
-    font-weight: bolder;
+    align-items: center;
+    height: 100vh;
+    background-image: url(page-background.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.main-container{
-    display: flex;
-    max-width: 40%;
-    max-height: 70%;
-    margin: 0 auto;
-    padding:20px;
-    background-color: beige;
+#calculator{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(to right bottom, #ff9bff, #ff84ea, #fe6cd3, #fc51bb, #f82fa1);
     border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
 
-    flex-wrap: wrap;
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    /* background-image: linear-gradient(to left, #f4b8e4, #f2b0e5, #f0a8e7, #eca0ea, #e898ed, #e993eb, #e98dea, #ea88e8, #f083e0, #f67fd7, #fb7acd, #ff76c4); */
+    color: red;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
 }
 
 button{
-    height: 80px;
-    width: 50px;
-    padding: 70px;
-    margin: 10px;
-    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to left, #f4b8e4, #f2b5e5, #efb1e7, #ecaee9, #e8abeb, #e7a8e9, #e7a6e6, #e6a3e4, #e8a0dd, #ea9ed5, #eb9bce, #eb99c7);;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    /* font-style: italic; */
+    cursor: pointer;
+}
+
+button:hover{
+    background-image: linear-gradient(to left, #f6d0ec, #f4cdec, #f2c9ed, #efc6ee, #ecc3ef, #ecc1ed, #ebbeeb, #ebbce9, #edbae4, #eeb7df, #efb5da, #f0b3d5);
+}
+
+button:active{
+    background-image: linear-gradient(to left, #f9e7f4, #f8e4f4, #f8e1f5, #f7def5, #f5dbf6, #f5d8f5, #f4d6f5, #f4d3f4, #f6d0f0, #f8ccec, #f9c8e8, #fbc5e3);
+}
+
+.operatorBttn{
+    background-image: radial-gradient(circle, #f46ccf, #ee60c1, #e954b4, #e247a6, #dc3a99, #da3598, #d92f97, #d72896, #d92ca1, #da30ad, #db36b9, #da3cc6);
+}
+
+.operatorBttn:hover{
+    background-image: radial-gradient(circle, #eeb9df, #eaa3d2, #e68cc4, #e274b5, #de59a5, #df59a7, #e158a8, #e258aa, #e873bf, #ee8cd2, #f5a3e4, #fbbaf5);
+}
+
+.operatorBttn:active{
+    background-image: radial-gradient(circle, #f2d9eb, #eccae1, #e7bad7, #e2abcd, #dd9bc2, #de97c2, #df94c2, #e090c2, #e797ce, #ed9fda, #f3a7e6, #f9aff3);
 }

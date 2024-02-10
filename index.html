@@ -3,38 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calc-UwU-Lator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calc-UwU-lator</title>
+    <link rel="stylesheet" href="styles.css" class="rel">
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="header">Calc-UwU-Lator</div>
-    <div class="main-container">
-        <div class="display">>></div>
-        <div class="buttons">
-            <button id="AC">AC</button>
-            <button id="C">C</button>
-            <button id="percentage">%</button>
-            <button id="divide">/</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="multiply">*</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="minus">-</button>
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="plus">+</button>
-            <button id="zero">0</button>
-            <button id="power">x^</button>
-            <button id="point">.</button>
-            <button id="equals">=</button>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operatorBttn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')"  class="operatorBttn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operatorBttn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operatorBttn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operatorBttn">C</button>
         </div>
-    </div>
-
-    <footer>Copyright Mridul Roy Shuvo 2024</footer>
+        </div>
+    </div> 
 </body>
 </html>
